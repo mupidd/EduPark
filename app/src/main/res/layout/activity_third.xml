@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <ImageView
+        android:id="@+id/koalaimg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/koala"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp"/>
+
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="****"
+        app:layout_constraintTop_toBottomOf="@id/koalaimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:hint="Guess the word"
+        android:gravity="center"
+        android:id="@+id/edit"
+        app:layout_constraintTop_toBottomOf="@id/h1"
+        android:background="@drawable/edittext"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/PREV"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:text="PREV"
+        android:background="@drawable/rounded"
+        android:textColor="@color/SparkGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded2"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
